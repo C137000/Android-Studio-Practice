@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginSystem">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/txt_Welcome"
+        android:textColor="@color/teal_200"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:text="@string/txt_missed"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50sp"
+        android:text="@string/email" />
+
+    <EditText
+        android:id="@+id/st_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="@string/enter_your_email"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25sp"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/st_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="@string/password_field" />
+
+    <Button
+        android:id="@+id/btn_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:background="@android:color/transparent"
+        android:onClick="onLoginClick"
+        android:text="@string/forget_password"
+        android:textColor="@color/black"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:onClick="onLoginClick"
+        android:text="@string/login_in"
+        android:background="@color/button_color"
+        />
+
+    <ImageView
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:src="@drawable/facebook_icon"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="RegisterClick"
+        android:text="@string/register"
+        android:textColor="@android:color/holo_red_dark"
+
+        />
+
+
+</LinearLayout>

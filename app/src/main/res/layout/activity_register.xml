@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/create_accountHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Create an Account"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_accountHead"
+        android:layout_centerHorizontal="true"
+        android:text="Join now to streamline your experience from day one"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/NameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subhead"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="Name:"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/nameId"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NameLabel"
+        android:layout_marginLeft="50dp"
+        android:hint="Enter your Name" />
+
+    <TextView
+        android:id="@+id/mylabemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameId"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Email:"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/EmailID"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mylabemail"
+        android:layout_marginLeft="50dp"
+        android:hint="Enter your email." />
+
+    <TextView
+        android:id="@+id/Pass1Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmailID"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Password:"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/PassField"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Pass1Label"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="11dp"
+        android:hint="Enter the password" />
+
+    <TextView
+        android:id="@+id/Pass2Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PassField"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Confirm Password:"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/PassField2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Pass2Label"
+        android:layout_marginLeft="50dp"
+        android:hint="Confirm Password" />
+
+
+    <Button
+        android:id="@+id/RegBtn"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/PassField2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/JustOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RegBtn"
+        android:layout_centerHorizontal="true"
+        android:text="or"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/Already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have An Account?"
+        android:layout_below="@id/JustOr"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="85dp"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Sign in"
+        android:layout_below="@id/JustOr"
+        android:layout_toRightOf="@id/Already"
+        android:background="@android:color/transparent"
+        android:textColor="#FF0000"
+        android:layout_marginTop="10dp"
+        android:onClick="onSignUpClick" />
+
+
+
+</RelativeLayout>

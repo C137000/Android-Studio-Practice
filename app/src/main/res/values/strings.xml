@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AppJoyBCA</string>
+    <string name="emialfield">Enter the damm Email</string>
+    <string name="txt_Welcome">Welcome Back!</string>
+    <string name="txt_missed">You\'ve been missed!</string>
+    <string name="email">Email:-</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="password">Password:-</string>
+    <string name="password_field">Enter your Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="login_in">Login In</string>
+    <string name="register">Register ?</string>
+    <string name="add_user">Add User</string>
+    <string name="sign_in_with_google">📚Sign in with Google</string>
+
+
+    <string-array name="Days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+</resources>

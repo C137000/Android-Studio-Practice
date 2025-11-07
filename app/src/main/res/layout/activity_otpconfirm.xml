@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OTPConfirm">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify your OTP"
+        android:textSize="35dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the code sent to your email"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="10px"/>
+
+
+    <EditText
+        android:id="@+id/otp1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="1"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/otp2"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="1"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

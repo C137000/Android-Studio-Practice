@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TableLogin">
+
+
+    <TableRow>
+        <TextView
+            android:text="@string/txt_Welcome"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:paddingTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:paddingBottom="35dp"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/email"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            />
+    </TableRow>
+
+
+    <TableRow>
+        <EditText
+            android:hint="@string/enter_your_email"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="15dp"
+            />
+    </TableRow>
+
+    <TableRow android:paddingTop="20dp">
+        <TextView android:text="@string/password"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            />
+    </TableRow>
+
+
+    <TableRow>
+        <EditText
+            android:hint="@string/password_field"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="30dp"
+
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button
+
+            android:id="@+id/btn_forget"
+            android:background="@android:color/transparent"
+            android:text="@string/forget_password"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:width="1dp"
+            />
+    </TableRow>
+
+
+    <TableRow>
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/login_in"
+            android:background="@color/button_color"
+            android:layout_weight="1"
+
+            />
+    </TableRow>
+</TableLayout>
