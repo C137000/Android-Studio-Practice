@@ -12,35 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppJoyBCA">
         <activity
-            android:name=".classwork.my_adapter"
+            android:name=".ListViewActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
         <activity
-            android:name=".classwork.firstUi"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".classwork.my_adapter"
+            android:exported="true"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity
+            android:name=".classwork.firstUi"
+            android:exported="true" />
         <activity
             android:name=".dialog.dialog_Quit"
             android:exported="false" />
         <activity
             android:name=".dialog.dialog_activity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".dribbleLogin"
             android:exported="false" />
@@ -64,13 +57,7 @@
             android:exported="false" />
         <activity
             android:name=".Dashboard"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ForgetPasswordActivity"
             android:exported="false" />
