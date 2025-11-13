@@ -12,19 +12,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppJoyBCA">
         <activity
+            android:name="practiseUI.picturewala"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".classwork.MyGridActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ListViewActivity"
             android:exported="true">
-
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".classwork.my_adapter"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".classwork.firstUi"
             android:exported="true" />
