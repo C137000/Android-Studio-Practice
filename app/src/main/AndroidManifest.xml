@@ -12,24 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppJoyBCA">
         <activity
-            android:name=".my_list_row"
-            android:exported="false" />
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-
-        <activity
-            android:name="practiseUI.picturewala"
-            android:exported="true"></activity>
-        <activity
-            android:name=".classwork.MyGridActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".ListViewActivity"
+            android:name=".classwork.TestRecycleActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,6 +20,44 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".GridViewActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RowNewListActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MeroCustomListActivity"
+            android:exported="false" />
+        <!--
+<activity
+            android:name="custom_view"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".my_list_row"
+            android:exported="false" />
+        <activity
+            android:name="practiseUI.picturewala"
+            android:exported="true" />
+        <activity
+            android:name=".classwork.MyGridActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListViewActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".classwork.my_adapter"
             android:exported="true" />
