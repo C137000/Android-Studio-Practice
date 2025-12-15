@@ -23,15 +23,12 @@
         <activity
             android:name=".GridViewActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".RowNewListActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".MeroCustomListActivity"
             android:exported="false" />
@@ -57,7 +54,9 @@
             android:exported="true" />
         <activity
             android:name=".ListViewActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".classwork.my_adapter"
             android:exported="true" />
