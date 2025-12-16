@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppJoyBCA">
         <activity
-            android:name=".classwork.TestRecycleActivity"
+            android:name=".fragament.MyShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragament.HostActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,14 +24,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GridViewActivity"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".RowNewListActivity"
+            android:name=".classwork.TestRecycleActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".GridViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".RowNewListActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".MeroCustomListActivity"
             android:exported="false" />
@@ -54,9 +59,7 @@
             android:exported="true" />
         <activity
             android:name=".ListViewActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".classwork.my_adapter"
             android:exported="true" />

@@ -45,7 +45,7 @@ class RecycleKoAdapter extends RecyclerView.Adapter<RecycleKoAdapter.MeroViewHol
             "Nirjala", "Pratiksha", "Rashmi", "Ritika", "Sangam",
             "Sebak", "Srijana", "Sudip", "Sushil", "Swostika"
     };
-    String[] nickName = {"Hallankari", "Hasmati", "Silent", "Chasmis", "Joker",
+    String[] nickName = {"Hallankari", "Hasmati", "Silent", "Chasmis", "Legend",
             "Motax", "Small", "Galatey", "LoverBoi", "Mote",
             "Gayab", "Danger", "Dancer", "Don", "Chattu",
             "Neta", "Boxer", "Lamo Kapal Boy", "Commando", "Presenter"
