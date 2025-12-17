@@ -8,9 +8,11 @@
     tools:context=".fragament.MyShopActivity">
 
     <FrameLayout
+        android:id="@+id/frame_id"
         android:layout_above="@+id/Linear"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/holo_orange_light"
         />
 
     <LinearLayout
@@ -22,24 +24,28 @@
         android:weightSum="4">
 
         <Button
+            android:id="@+id/Homebtn"
             android:layout_margin="2dp"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Home"/>
         <Button
+            android:id="@+id/Profilebtn"
             android:layout_margin="2dp"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Profile"/>
         <Button
+            android:id="@+id/Settingbtn"
             android:layout_margin="2dp"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Setting"/>
         <Button
+            android:id="@+id/Cartbtn"
             android:layout_margin="2dp"
             android:layout_width="0dp"
             android:layout_weight="1"
