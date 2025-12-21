@@ -16,6 +16,7 @@ import com.AppJoyBCA.appjoybca.Dashboard;
 import com.AppJoyBCA.appjoybca.R;
 
 public class UiActivity extends AppCompatActivity {
+    MyDatabaseHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,8 @@ public class UiActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        dbHelper = new MyDatabaseHelper(this);
         EditText Dbname = findViewById(R.id.db_name);
         EditText DbContact = findViewById(R.id.db_contact);
         EditText DbAddress = findViewById(R.id.db_address);
@@ -36,12 +39,16 @@ public class UiActivity extends AppCompatActivity {
         Button btn_delete = findViewById(R.id.btn_delete);
         Button btn_update = findViewById(R.id.btn_update);
 
-
-
         //onclick listener for the add (calls the add page)
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String name = Dbname.getText().toString();
+                String address = DbAddress.getText().toString();
+                String contact = DbContact.getText().toString();
+                int contactNUmber = Integer.parseInt(contact);
+
+                dbHelper.insertUSer(name, address, contactNUmber);
                 Toast.makeText(UiActivity.this, "Add ko toast", Toast.LENGTH_SHORT).show();
             }
         });
