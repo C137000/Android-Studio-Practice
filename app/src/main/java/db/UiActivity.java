@@ -1,6 +1,10 @@
 package db;
 
+import static java.lang.reflect.Array.getInt;
+
+import android.database.Cursor;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -59,7 +63,17 @@ public class UiActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(UiActivity.this, "View ko toast", Toast.LENGTH_SHORT).show();
+                Cursor returnData = dbHelper.getAllUser();
 
+                while(returnData.moveToNext()){
+                    int id = returnData.getInt(returnData.getColumnIndexOrThrow("id"));
+                    String name = returnData.getString(returnData.getColumnIndexOrThrow("name"));
+                    String address = returnData.getString(returnData.getColumnIndexOrThrow("address"));
+                    String contact = returnData.getString(returnData.getColumnIndexOrThrow("contact"));
+
+                    Log.d("Data Haru", id + " " + name + " " + address + " " + contact);
+
+                }
             }
         });
 
@@ -76,9 +90,8 @@ public class UiActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(UiActivity.this, "update ko toast", Toast.LENGTH_SHORT).show();
-
+                dbHelper.updateUser(2,"Jack","Lalitput");
             }
         });
-
     }
 }

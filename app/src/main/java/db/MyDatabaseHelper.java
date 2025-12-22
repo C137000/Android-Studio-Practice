@@ -2,6 +2,7 @@ package db;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -32,6 +33,21 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         db.insert(TABLE_NAME, null,values);
     }
 
+
+    public Cursor getAllUser(){
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor AllData = db.rawQuery("SELECT * FROM user",null);
+        return AllData;
+    }
+
+    public void updateUser(int id,String name,String address){
+        //Update user set name = "Jack" where id = ?;
+        SQLiteDatabase db = getReadableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("name",name);
+        values.put("address",address);
+        db.update(TABLE_NAME, values,"id = ?",new String[]{String.valueOf(id)});
+    }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
