@@ -48,6 +48,13 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         values.put("address",address);
         db.update(TABLE_NAME, values,"id = ?",new String[]{String.valueOf(id)});
     }
+
+    public void deleteUser(int id){
+        //delete from user where id = 2;
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete(TABLE_NAME, "id = ?", new String[]{String.valueOf(id)});
+        db.close();
+    }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 

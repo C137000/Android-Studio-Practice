@@ -50,10 +50,15 @@ public class UiActivity extends AppCompatActivity {
                 String name = Dbname.getText().toString();
                 String address = DbAddress.getText().toString();
                 String contact = DbContact.getText().toString();
-                int contactNUmber = Integer.parseInt(contact);
 
-                dbHelper.insertUSer(name, address, contactNUmber);
-                Toast.makeText(UiActivity.this, "Add ko toast", Toast.LENGTH_SHORT).show();
+                if(!name.isEmpty() && !address.isEmpty() && !contact.isEmpty()){
+                    int contactNUmber = Integer.parseInt(contact);
+                    dbHelper.insertUSer(name, address, contactNUmber);
+                    Toast.makeText(UiActivity.this, "Add success message", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(UiActivity.this, "Fill the form all the way", Toast.LENGTH_SHORT).show();
+
+                }
             }
         });
 
@@ -81,6 +86,7 @@ public class UiActivity extends AppCompatActivity {
         btn_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                dbHelper.deleteUser(5);
                 Toast.makeText(UiActivity.this, "delete ko toast", Toast.LENGTH_SHORT).show();
 
             }
@@ -90,7 +96,7 @@ public class UiActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(UiActivity.this, "update ko toast", Toast.LENGTH_SHORT).show();
-                dbHelper.updateUser(2,"Jack","Lalitput");
+                dbHelper.updateUser(11,"Susilaa","USA");
             }
         });
     }
