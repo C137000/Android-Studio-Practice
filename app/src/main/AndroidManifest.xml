@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppJoyBCA">
         <activity
+            android:name="db_hospital.Hospital"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--        <activity-->
+<!--            android:name="db_hospital.Hospital"-->
+<!--            android:exported="false" />-->
+        <activity
             android:name="db.UiActivity"
             android:exported="true">
             <intent-filter>
@@ -22,28 +34,19 @@
         </activity>
         <activity
             android:name=".fragament.MyShopActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".fragament.HostActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".classwork.TestRecycleActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".GridViewActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".RowNewListActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MeroCustomListActivity"
             android:exported="false" />
